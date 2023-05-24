@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selling Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+     <!-- Font awesome icon cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+</head>
+<body>
+    <section id="header">
+        <a href="#"> <img src="image/logo.png" alt="Loading" class="logo"> </a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i  class="fa-solid fa-circle-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping" style="color: black;"></i></a>
+            <i id="bar" class="fa-solid fa-outdent" style="color: black;"></i>
+        </div>
+    </section>
+
+    <section id="myhero">
+        <button>Shop Now</button>
+    </section>
+   <section id="details">
+    <p>New Books</p>
+    <h1>A Book for a Healthy Mind</h1>
+    <h3>On Going Sale!</h3>
+    <p>Currently Flat 50%  off! on entire stock</p>
+   </section>
+    <footer>
+        <div class="overview">
+            <ul class="last-nav">
+                <i class="fa-solid fa-hand-holding-heart" style="color: #ffffff;"></i>
+                <li>PRODUCTS</li>
+            </ul>
+        </div>
+        <div class="overview">
+            <ul class="last-nav">
+                <i class="fa-regular fa-newspaper" style="color: #ffffff;"></i>
+                <li>OUR STORY</li>
+            </ul>
+        </div>
+        <div class="overview">
+            <ul class="last-nav">
+                <i class="fa-solid fa-list-ol" style="color: #ffffff;"></i>
+                <li>CATEGORIES</li>
+            </ul>
+        </div>
+        <div class="overview">
+            <ul class="last-nav">
+                <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                <li>OUR LOCATION</li>
+            </ul>
+        </div>
+    </footer>
+<script>
+    const bar = document.getElementById('bar');
+const close = document.getElementById('close');
+const nav = document.getElementById('navbar')
+
+if(bar){
+    bar.addEventListener('click', () =>{
+        nav.classList.add('active')
+    })
+}
+
+if(close){
+    close.addEventListener('click', () =>{
+        nav.classList.remove('active')
+    })
+}
+</script>
+
+</body>
+</html>
